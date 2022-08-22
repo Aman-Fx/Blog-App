@@ -7,7 +7,7 @@ import { Blog } from './Pages/Blog/Blog';
 const App = () => {
   return (
     <div className='App'>
-      <Router basename='/Blog-App' >
+      <Router  >
         <div className='container'>
           <Routes >
             <Route path='/' element={<Home />} />
