@@ -1,0 +1,17 @@
+.emptyList-wrap {
+    text-align: center;
+    background-color: #f0f0f0;
+    max-width: 300px;
+    color: #0f52ba;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+}
+.emptyList-wrap h4{
+    color: #0080ff;
+}
+
+.emptyList-wrap img {
+    max-width: 250px;
+    width: 100%;
+}
