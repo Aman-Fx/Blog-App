@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import { EmptyList } from '../../Components/Comman/EmptyList/EmptyList'
+import { Footer } from '../../Components/Comman/Footer/Footer'
+// import { Filter } from '../../Components/Filter/Filter'
 import { BlogList } from '../../Components/Home/BlogList/BlogList'
 import { Header } from '../../Components/Home/Header/Header'
 import { SearchBar } from '../../Components/Home/SearchBar/SearchBar'
@@ -37,6 +39,13 @@ export const Home = () => {
 
   }
 
+  // // Blogs sorting by date
+
+  // const sortBlogs = () => {
+  //   const sortedBlogs = BlogData.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+  //   setBlogs(sortedBlogs);
+  // };
+
 
 
 
@@ -45,7 +54,12 @@ export const Home = () => {
       {/* Page Header */}
       <Header />
 
-      {/* Search bar */}
+      {/* sorting by upload time */}
+      {/* <Filter handleSortBlogs={sortBlogs} /> */}
+
+
+      
+      {/* Search bar and Add blog */}
       <SearchBar value={searchKey}
         clearSearch={handleClearSearch}
         formSubmitt={handleSearchBar}
@@ -53,9 +67,12 @@ export const Home = () => {
         handleSuggest={handleSuggest}
       />
 
+
       {/* BlogList & Empty list */}
       {!blogs.length ? <EmptyList /> : <BlogList blogs={blogs} />}
 
+    <Footer/>
+    
     </div>
   )
 }

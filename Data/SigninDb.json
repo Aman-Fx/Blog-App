@@ -1,0 +1,32 @@
+{
+  "Signin": [
+    {
+      "fullname": "aman",
+      "Email": "a@b.c",
+      "SetPassword": "1234",
+      "ConfirmPassword": "1234",
+      "id": 1
+    },
+    {
+      "fullname": "Soni Aman",
+      "Email": "d@g.c",
+      "SetPassword": "2345",
+      "ConfirmPassword": "2345",
+      "id": 2
+    },
+    {
+      "fullname": "dskc",
+      "Email": "k@b.c",
+      "SetPassword": "1234",
+      "ConfirmPassword": "1234",
+      "id": 3
+    },
+    {
+      "fullname": "w",
+      "Email": "k@b.c",
+      "SetPassword": "1234",
+      "ConfirmPassword": "1234",
+      "id": 4
+    }
+  ]
+}

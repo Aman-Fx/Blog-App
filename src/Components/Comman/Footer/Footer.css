@@ -1,0 +1,22 @@
+.FooterWrap{
+    padding: 20px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    width: 100%;
+    overflow: visible;
+    margin-top: 20px;
+    margin-bottom: 0%;
+    text-align: center;
+}
+
+.FooterWrap a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size:small;
+}
+
+.FooterWrap a :hover{
+    color: gainsboro;
+}
