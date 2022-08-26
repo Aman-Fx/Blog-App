@@ -1,5 +1,5 @@
-import React from 'react'
-import  Axios  from 'axios'
+import React, { useState } from 'react'
+// import Axios from 'axios'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from 'yup'
@@ -17,20 +17,28 @@ const Schema = yup
 
 export const Signin = () => {
 
+
+  //For Local Storage purpose
+  const [SigninData, setSigninData] = useState([]);
+
   const { register, handleSubmit, formState: { errors }, reset } = useForm({
     resolver: yupResolver(Schema)
   })
 
   const submitForm = (data) => {
-    console.log( { data });
+    console.log({ data });
     reset();
-    Axios.post("http://localhost:3333/Signin",data)
-    .then((Response) =>{
-      console.log(Response);
-    })
-    .catch(error => {
-      console.log(error);
-    })
+
+    // localStorage
+    localStorage.setItem('SigninCredentials', JSON.stringify([...SigninData, data]));
+
+    // Axios.post("http://localhost:3333/Signin", data)
+    //   .then((Response) => {
+    //     console.log(Response);
+    //   })
+    //   .catch(error => {
+    //     console.log(error);
+    //   })
 
   }
 
