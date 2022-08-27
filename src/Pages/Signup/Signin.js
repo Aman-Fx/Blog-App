@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 // import Axios from 'axios'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from 'yup'
+import { useNavigate } from 'react-router-dom'
 
 //Creating Schema to difine validations
 const Schema = yup
@@ -17,9 +18,11 @@ const Schema = yup
 
 export const Signin = () => {
 
+  //New version of usehistory hook to navigate to the aLogin page
+  const history = useNavigate();
 
   //For Local Storage purpose
-  const [SigninData, setSigninData] = useState([]);
+  // const [signinData, setSigninData] = useState([]);
 
   const { register, handleSubmit, formState: { errors }, reset } = useForm({
     resolver: yupResolver(Schema)
@@ -30,7 +33,12 @@ export const Signin = () => {
     reset();
 
     // localStorage
-    localStorage.setItem('SigninCredentials', JSON.stringify([...SigninData, data]));
+    // [...signinData, data]
+    localStorage.setItem('SigninCredentials', JSON.stringify([data]));
+
+
+    //Go to the Login page after a successfull signup
+    history('/Login')
 
     // Axios.post("http://localhost:3333/Signin", data)
     //   .then((Response) => {

@@ -20,7 +20,7 @@ export const Blog = () => {
 
   return (
     <div>
-      <Link to={'/'} className = "go-back"> <span> &#x2190; </span>Go Back</Link>
+      <Link to={'/'} className="go-back"> <span> &#x2190; </span>Go Back</Link>
 
       {blog ? (
         <div className='blog-wrap'>
@@ -43,7 +43,8 @@ export const Blog = () => {
 
           <p className='blog-desc'> {blog.description}</p>
         </div>
-      ) : (<EmptyList />)}
+      ) : (<EmptyList />)
+      }
 
 
     </div>

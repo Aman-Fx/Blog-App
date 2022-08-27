@@ -10,18 +10,18 @@ import { AddBlog } from './Components/AddBlog/AddBlog';
 const App = () => {
   return (
     <div className='App'>
-      <Router  basename='/Blog-App'>
+      <Router basename='/Blog-App'>
         <div className='container'>
           <Routes >
             <Route path='/' element={<Home />} />
             <Route path='/Blog/:id' element={<Blog />} />
-            <Route path='/Login' element= {<Login/>} />
-            <Route path='/Signin' element = {<Signin/>} />
-            <Route path= '/AddBlog' element = {<AddBlog/>} />
-            
+            <Route path='/Login' element={<Login />} />
+            <Route path='/Signin' element={<Signin />} />
+            <Route path='/AddBlog' element={<AddBlog />} />
+
           </Routes>
         </div>
-       
+
       </Router>
     </div>
   )

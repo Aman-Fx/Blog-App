@@ -1,4 +1,3 @@
-
 .formwrap {
     display: flex;
     justify-content: center;
@@ -22,7 +21,7 @@
 
 }
 
-.formwrap p{
+.formwrap p {
     font-size: 0.9rem;
     color: #a9a9a9;
 }
@@ -50,13 +49,16 @@
     height: 20px;
 }
 
-.loginpage h4{
+
+
+
+.loginpage h4 {
     text-align: center;
     font-size: .9rem;
-    
+
 }
 
-.loginpage a{
+.loginpage a {
     text-decoration: none;
     cursor: pointer;
     text-transform: uppercase;

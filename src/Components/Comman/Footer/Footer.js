@@ -1,13 +1,23 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import './Footer.css'
+import { useNavigate } from 'react-router-dom'
+import './Footer.css';
 
 export const Footer = () => {
+
+    const history = useNavigate();
+
+    const handleLogins =() =>{
+        const getuser = localStorage.getItem('UserLogin');
+        if (getuser && getuser.length) {
+            history('/AddBlog')
+        } else {
+            history('/Login')
+        }
+    }
+
     return (
         <div className='FooterWrap'>
-            <Link to={'/Login'}>
-                <h3>Add Blogs</h3>
-            </Link>
+            <h3 onClick={handleLogins}>Add Blogs</h3>
         </div>
     )
 }

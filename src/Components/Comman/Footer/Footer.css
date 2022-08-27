@@ -10,13 +10,12 @@
     text-align: center;
 }
 
-.FooterWrap a{
+.FooterWrap h3{
     text-decoration: none;
     cursor: pointer;
     color: white;
-    font-size:small;
-}
+   }
 
-.FooterWrap a :hover{
+.FooterWrap h3 :hover{
     color: gainsboro;
 }

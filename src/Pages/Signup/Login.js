@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useNavigate} from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './Login.css'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from "@hookform/resolvers/yup"
@@ -17,7 +17,7 @@ export const Login = () => {
 
     //New version of usehistory hook to navigate to the add content page
     const history = useNavigate();
-    
+
     //Yup methods-->
     const { register, handleSubmit, formState: { errors }, reset } = useForm({
         resolver: yupResolver(Schema)
@@ -41,17 +41,17 @@ export const Login = () => {
             if (userlogin.length === 0) {
                 alert('Invalid Credentials');
             }
-            else{
+            else {
                 console.log("Login Succesfull");
 
                 //Set this details to the localstorage
-                localStorage.setItem('UserLogin',JSON.stringify(userlogin))
+                localStorage.setItem('UserLogin', JSON.stringify(userlogin))
 
                 //Visting to the Add content page
                 history('/AddBlog');
 
             }
-        } 
+        }
     }
 
     return (
