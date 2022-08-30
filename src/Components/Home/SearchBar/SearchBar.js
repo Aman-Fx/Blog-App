@@ -1,8 +1,8 @@
 import React from 'react'
-import { BlogData } from '../../../Config/BlogData'
+// import { BlogData } from '../../../Config/BlogData'
 import './SearchBar.css'
 
-export const SearchBar = ({ value, handleSearchKey, clearSearch, formSubmitt, handleSuggest }) => {
+export const SearchBar = ({ value, handleSearchKey, clearSearch, formSubmitt, handleSuggest, blogData }) => {
   return (
     
       <div className='searchBar-wrap'>
@@ -26,7 +26,7 @@ export const SearchBar = ({ value, handleSearchKey, clearSearch, formSubmitt, ha
 
         ) } */}
 
-          {value && BlogData.filter((dropdown) =>
+          {value && blogData.filter((dropdown) =>
             dropdown.category.toLowerCase().startsWith(value.toLowerCase()) && dropdown.category !== value
           ).map((suggestion) =>
             <p className='suggestions-list' onClick={() => {

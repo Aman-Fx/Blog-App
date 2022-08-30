@@ -6,7 +6,7 @@ export const BlogList = ({ blogs }) => {
     return (
         <div className="blogList-wrap">
             {blogs.map((blog) => (
-                <BlogItems blog={blog} key = {blog.id} />
+                <BlogItems blog={blog}  key = {blog.id} />
             ))}
         </div>
     );

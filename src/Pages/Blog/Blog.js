@@ -2,21 +2,27 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Chip } from '../../Components/Comman/Chip/Chip';
 import { EmptyList } from '../../Components/Comman/EmptyList/EmptyList';
-import { BlogData } from '../../Config/BlogData';
+import { FetchData } from '../../Components/Comman/FetchData/FetchData';
+// import { BlogData } from '../../Config/BlogData';
 import './Blog.css'
 
+
 export const Blog = () => {
+
+  const { data: blogData } = FetchData("http://localhost:3333/BlogDb");
   const { id } = useParams();
   const [blog, setBlog] = useState(null)
 
 
   useEffect(() => {
-    let blog = BlogData.find((blog) => blog.id === parseInt(id));
-
+    let blog = blogData.find((blog) => blog.id === parseInt(id));
+    
     if (blog) {
       setBlog(blog)
     }
-  }, [id])
+  }, [blogData, id])
+
+  console.log(blog);
 
   return (
     <div>

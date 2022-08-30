@@ -1,4 +1,4 @@
-.add-blog h1 {
+.add-blog {
     text-align: center;
 }
 
@@ -12,7 +12,7 @@
     border-radius: 25px;
     align-items: center;
     justify-content: center;
-    max-width: 70%;
+    max-width: 60%;
 }
 
 .blog-input div {
@@ -21,16 +21,22 @@
     width: 100%;
 }
 
-.blog-input div span{
+/* .blog-input span {
     color: gray;
-    font-size:x-small;
+    font-size: x-small;
+    margin-left: 10px;
+} */
+
+.opt-text {
+    color: gray;
+    font-size: x-small;
     margin-left: 10px;
 }
 
 .blog-input input {
     margin: 5px auto;
     flex: 1rem;
-    padding: 4px;
+    padding: 6px;
     outline: none;
     border: 1px solid gainsboro;
     border-radius: 6px;
@@ -43,7 +49,7 @@
 .blog-input textarea {
     margin: 5px auto;
     flex: 1rem;
-    padding: 4px;
+    padding: 6px 0;
     outline: none;
     border: 1px solid gainsboro;
     border-radius: 6px;
@@ -51,13 +57,64 @@
     width: 95%
 }
 
-.blog-input button{
-    width: 100%;
-    padding: 8px 10px;
+.blog-input button {
+    width: 20%;
+    padding: 8px;
     background-color: #0f52ba;
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
     color: white;
-    font-size: large;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+
+}
+
+.add-blog-button {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 auto;
+}
+
+.add-blog-button button {
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+
+.sub-category input {
+    width: 90%;
+}
+
+.sub-category span {
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: gray;
+}
+
+.sub-category span :hover {
+    color: maroon;
+}
+
+.blog-input p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #000000;
+    color: #f0f0f0;
+    padding: 5px;
+    width: 5%;
+    margin: 8px auto ;
+    border-radius: 20px;
 
 }
