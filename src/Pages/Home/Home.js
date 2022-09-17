@@ -47,28 +47,32 @@ export const Home = () => {
   //Search Submit
   const handleSearchBar = (e) => {
     e.preventDefault();
-    handleSearchResults();
+    handleSearchResults()
   }
 
-  //Dropdown
-  const handleSuggest = (value) => {
-    setSearchKey(value);
-  }
   //Clear search and show all blogs
   const handleClearSearch = () => {
     setBlogs(blogData);
     setSearchKey('');
   }
 
-  //search for blog by category
-  const handleSearchResults = (value) => {
+  //Dropdown
+  const handleSuggest = (value) => {
     setSearchKey(value);
     const filterBlogs = blogs.filter((item) =>
-      item.category?.toLowerCase().includes(searchKey?.toLowerCase().trim())
+      item.category?.toLowerCase().includes(value.toLowerCase().trim())
     )
-    setBlogs(filterBlogs)
-    console.log(blogs);
+    setBlogs(filterBlogs);
+
   }
+
+  //search for blog by category
+   const handleSearchResults = () => {
+      const filterBlogs = blogs.filter((item) =>
+        item.category?.toLowerCase().includes(searchKey.toLowerCase().trim())
+      )
+      setBlogs(filterBlogs)
+    }
 
 
   return (
@@ -79,18 +83,18 @@ export const Home = () => {
       {/* Search bar*/}
       <SearchBar
         value={searchKey}
-        formSubmit={handleSearchBar}
-        handleSearchKey={(e) => setSearchKey(e.target.value)}
-        handleSuggest={handleSearchResults}
-        blogs={blogs}
         clearSearch={handleClearSearch}
+        formSubmit={handleSearchBar}
+        handleSuggest={handleSuggest}
+        handleSearchKey={(e) => setSearchKey(e.target.value)}
+        blogs={blogs}
       />
 
 
       {/* BlogList & Empty list */}
       {!blogs.length ? <EmptyList /> : <BlogList blogs={blogs} />}
 
-      <Datareciver />
+
 
 
     </div>

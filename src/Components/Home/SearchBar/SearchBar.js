@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import './SearchBar.css'
 
-export const SearchBar = ({ handleSearchKey, formSubmit, blogs, value, handleSuggest, clearSearch }) => {
+export const SearchBar = ({ handleSearchKey, formSubmit, blogs, value, handleSuggest, clearSearch}) => {
 
   const [blogdata, setblogData] = useState([]);
 
@@ -23,21 +23,19 @@ export const SearchBar = ({ handleSearchKey, formSubmit, blogs, value, handleSug
           value={value}
         />
 
-        {value && <span onClick={clearSearch}>X</span>}
-
-        <button>Go</button>
+        {value && <span className='clearsearch' onClick={clearSearch}>X</span>}
       </form>
 
       <div className="suggestions">
 
         {value && blogdata.filter((dropdown) =>
-          dropdown.category?.toLowerCase().startsWith(value?.toLowerCase()) && dropdown.category !== value
+          dropdown.category?.toLowerCase().startsWith(value.toLowerCase()) && dropdown.category !== value
         ).map((suggestion) =>
 
-          <div className='suggestions-list' onClick={handleSuggest}
+          <div className='suggestions-list' onClick={() => { handleSuggest(suggestion.category) }}
             key={suggestion.id} >
-             <span>Category : </span>   
-           <span className='category-list'> {suggestion.category}</span>
+            <span>Category : </span>
+            <span className='category-list'> {suggestion.category}</span>
           </div>
         )
         }
