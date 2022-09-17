@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import './SearchBar.css'
 
-export const SearchBar = ({ handleSearchKey, formSubmit, blogs, value, handleSuggest, clearSearch}) => {
+export const SearchBar = ({ handleSearchKey, formSubmit, blogs, value, handleSuggest, clearSearch }) => {
 
   const [blogdata, setblogData] = useState([]);
 
@@ -39,6 +39,8 @@ export const SearchBar = ({ handleSearchKey, formSubmit, blogs, value, handleSug
           </div>
         )
         }
+
+       
       </div>
     </div>
 

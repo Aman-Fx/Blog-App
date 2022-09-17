@@ -60,19 +60,19 @@ export const Home = () => {
   const handleSuggest = (value) => {
     setSearchKey(value);
     const filterBlogs = blogs.filter((item) =>
-      item.category?.toLowerCase().includes(value.toLowerCase().trim())
+     item.category?.toLowerCase().includes(value.toLowerCase().trim())
     )
     setBlogs(filterBlogs);
 
   }
 
   //search for blog by category
-   const handleSearchResults = () => {
-      const filterBlogs = blogs.filter((item) =>
-        item.category?.toLowerCase().includes(searchKey.toLowerCase().trim())
-      )
-      setBlogs(filterBlogs)
-    }
+  const handleSearchResults = () => {
+    const filterBlogs = blogs.filter((item) =>
+      item.title?.toLowerCase().includes(searchKey.toLowerCase().trim())
+    )
+    setBlogs(filterBlogs)
+  }
 
 
   return (
