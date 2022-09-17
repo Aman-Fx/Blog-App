@@ -1,60 +1,74 @@
 // import Axios from 'axios';
-import React, { useState } from 'react'
+import axios from '../../Components/Comman/FetchData/Api';
+import React, { useEffect, useState } from 'react';
 import { EmptyList } from '../../Components/Comman/EmptyList/EmptyList';
-import { FetchData } from '../../Components/Comman/FetchData/FetchData';
-import { Footer } from '../../Components/Comman/Footer/Footer';
-// import { Filter } from '../../Components/Filter/Filter';
+// import { FetchData } from '../../Components/Comman/FetchData/FetchData';
 import { BlogList } from '../../Components/Home/BlogList/BlogList';
 import { Header } from '../../Components/Home/Header/Header';
 import { SearchBar } from '../../Components/Home/SearchBar/SearchBar';
-// import { BlogData } from '../../Config/BlogData';
+import { Datareciver } from '../../Components/practice/Datareciver';
+
 
 export const Home = () => {
 
-  const { data: blogData } = FetchData("http://localhost:3333/BlogDb");
+  // const api = async () => {
+  //   const response = await axios.create().get("http://localhost:3333/BlogDb");
+  //   if (response.status === 200 || response.status === 201) {
+  //     setBlogs(response.data);
+  //     return response.data;
+  //   } else return [];
+  // }
+  // useEffect(() => {
+  //   api();
+  // }, []);
 
 
-  // const [blogData, setBlogData] = useState();
-  const [blogs, setBlogs] = useState(blogData);
-  const [searchKey, setSearchKey] = useState("")
+  const [blogs, setBlogs] = useState([]);
+  const [blogData, setBlogData] = useState([]);
+  const [searchKey, setSearchKey] = useState("");
+
+
+  const api = async () => {
+    try {
+      const result = await axios.get("/BlogDb")
+      setBlogs(result.data);
+      setBlogData(result.data)
+    }
+    catch (error) {
+      console.log(error);
+    }
+  }
+
+  useEffect(() => {
+    api();
+  }, []);
 
 
   //Search Submit
   const handleSearchBar = (e) => {
     e.preventDefault();
-    handleSearchResults()
+    handleSearchResults();
   }
 
   //Dropdown
   const handleSuggest = (value) => {
-
     setSearchKey(value);
+  }
+  //Clear search and show all blogs
+  const handleClearSearch = () => {
+    setBlogs(blogData);
+    setSearchKey('');
   }
 
   //search for blog by category
-  const handleSearchResults = () => {
-    const allBlogs = blogData;
-    const filterBlogs = allBlogs.filter((blogs) =>
-      blogs.category.toLowerCase().includes(searchKey.toLowerCase().trim())
+  const handleSearchResults = (value) => {
+    setSearchKey(value);
+    const filterBlogs = blogs.filter((item) =>
+      item.category?.toLowerCase().includes(searchKey?.toLowerCase().trim())
     )
-    setBlogs(filterBlogs);
+    setBlogs(filterBlogs)
+    console.log(blogs);
   }
-
-  //Clear search and show all blogs
-  const handleClearSearch = () => {
-    setBlogs(blogData)
-    setSearchKey('')
-
-  }
-
-  // // Blogs sorting by date
-
-  // const sortBlogs = () => {
-  //   const sortedBlogs = BlogData.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
-  //   setBlogs(sortedBlogs);
-  // };
-
-
 
 
   return (
@@ -62,27 +76,22 @@ export const Home = () => {
       {/* Page Header */}
       <Header />
 
-      {/* sorting by upload time */}
-      {/* <Filter handleSortBlogs={sortBlogs} /> */}
-
-
-
-      {/* Search bar and Add blog */}
-      <SearchBar value={searchKey}
-        clearSearch={handleClearSearch}
-        formSubmitt={handleSearchBar}
+      {/* Search bar*/}
+      <SearchBar
+        value={searchKey}
+        formSubmit={handleSearchBar}
         handleSearchKey={(e) => setSearchKey(e.target.value)}
-        handleSuggest={handleSuggest}
-        blogData={blogData}
-
+        handleSuggest={handleSearchResults}
+        blogs={blogs}
+        clearSearch={handleClearSearch}
       />
 
 
       {/* BlogList & Empty list */}
       {!blogs.length ? <EmptyList /> : <BlogList blogs={blogs} />}
 
-     
-      <Footer />
+      <Datareciver />
+
 
     </div>
   )

@@ -1,23 +1,17 @@
+
 .home-header{
-    text-align: center;
+    background: linear-gradient(to right, rgb(242, 242, 242), #ffffff, #ffffff );
+    padding-left: 30px;
 }
 
-.home-header h2{
+.home-header h2 {
     color: #0080ff;
     font-size: 2rem;
-}
-
-.home-header h1{
-    color: #0f52ba;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.home-header h1 span{
-    color: #b0c4de;
+    margin-bottom: 0%;
 }
 
 .home-header p {
-    color: #a9a9a9;
+    color: grey;
     font-weight: 500;
+   
 }

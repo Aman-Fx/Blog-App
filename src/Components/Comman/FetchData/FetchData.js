@@ -1,23 +1,48 @@
-import Axios from 'axios';
-import { useEffect, useState } from 'react'
+// // import axios from 'axios';
 
-export const FetchData = (url) => {
 
-    const [data, setData] = useState('');
-    const [error, setError] = useState('')
+// // export const FetchData = (url) => {
+// //     const [data, setData] = useState([]);
 
-    useEffect(() => {
-        Axios.get(url).then((Response) => {
-            setData(Response.data);
-            // console.log(Response.data);
-        })
-        .catch(err =>{
-            console.log(err);
-            setError(err);
-        })
+// //     const api = async() => {
+// //         const response = await axios.create().get(url);
+// //         if (response.status === 200 || response.status === 201) {
+// //           setData(response.data);
+// //           console.log('Heloo');
+// //           return response.data;
+// //         } else return [];
+// //       }
+    
+// //       useEffect(() => {
+// //         api();
+// //       }, []);
+    
+  
+// //   return ({data})
+// // }
 
-    }, [url])
+// // "http://localhost:3333/BlogDb"
 
-    console.log(data);
-    return ({ data, error })
-}
+
+// import React from 'react'
+
+// export const FetchData = () => {
+
+//   const
+
+//   const api = async () => {
+//     await axios.get("http://localhost:3333/BlogDb").then((response) => {
+//       setBlogs(response.data);
+//       setFilterBlogs(response.data);
+//     })
+//   }
+//   useEffect(() => {
+
+//     api();
+//   }, []);
+
+//   return (
+//     <div>FetchData</div>
+//   )
+// }
+

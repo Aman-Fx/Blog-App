@@ -1,4 +1,4 @@
-import Axios from 'axios';
+import axios from "../../Components/Comman/FetchData/Api";
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { EmptyList } from '../Comman/EmptyList/EmptyList';
@@ -42,9 +42,12 @@ export const AddBlog = () => {
 
   //Hnadling the form submit and posting it to the jason(database)
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
+    alert('Blog Added!');
+
     const addedBlog = { title, authorName, createdAt, cover, authorAvatar, category, description, subCategory };
-    Axios.post("http://localhost:3333/BlogDb", addedBlog)
+
+    axios.post("/BlogDb", addedBlog)
       .then((Response) => {
         console.log(Response);
       })
@@ -110,7 +113,7 @@ export const AddBlog = () => {
               <label htmlFor="">Add Cover <span className='opt-text'>(Optional)</span></label><br />
               <input type="file"
                 value={cover}
-                onChange={(e) => setCover(e.target.value)} />
+                onChange={(e) => setCover(e.target.files)} />
             </div>
 
             <div>

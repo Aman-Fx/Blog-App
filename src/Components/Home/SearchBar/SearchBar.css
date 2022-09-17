@@ -1,10 +1,9 @@
-
 .searchBar-wrap {
     background-color: #f0f0f0;
-    width: fit-content;
-    margin: 2.5rem auto 4rem auto;
-    padding: .5rem;
-    border-radius: 5px;
+    width: 30%;
+    margin: 70px auto;
+    padding: .7rem;
+    border-radius: 20px;
 }
 
 .searchBar-wrap form {
@@ -16,28 +15,20 @@
     background-color: #f0f0f0;
     outline: none;
     border: none;
-}
-
-.searchBar-wrap span {
-    padding-right: .5rem;
-    cursor: pointer;
-}
-
-.searchBar-wrap button {
-    outline: none;
-    border: none;
-    padding: 0.3rem 1rem;
-    border-radius: 5px;
-    background-color: #0f52ba;
-    color: #fff;
-    cursor: pointer;
-}
-
-.suggestions {
+    width: 100%;
     text-align: center;
-    cursor: pointer;
 }
 
-.suggestions :hover {
-    color: #0f52ba;
+.suggestions-list {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #0080ff;
+    font-weight: 600;
+    padding: 5px;
+    border-top: 1px solid #a9a9a9;
+}
+
+.category-list {
+    margin-left: 5px;
 }

@@ -1,44 +1,52 @@
 import React from 'react'
-// import { BlogData } from '../../../Config/BlogData'
+import { useEffect } from 'react';
+import { useState } from 'react';
 import './SearchBar.css'
 
-export const SearchBar = ({ value, handleSearchKey, clearSearch, formSubmitt, handleSuggest, blogData }) => {
+export const SearchBar = ({ handleSearchKey, formSubmit, blogs, value, handleSuggest, clearSearch }) => {
+
+  const [blogdata, setblogData] = useState([]);
+
+  useEffect(() => {
+    setblogData(blogs);
+    console.log(blogdata);
+  }, [blogs])
+
+
   return (
-    
-      <div className='searchBar-wrap'>
-        <form onSubmit={formSubmitt}>
-          <input
-            type="text"
-            onChange={handleSearchKey}
-            placeholder='Search by category'
-            value={value}
-          />
+    <div className='searchBar-wrap'>
+      <form onSubmit={formSubmit}>
+        <input
+          type="text"
+          onChange={handleSearchKey}
+          placeholder='Start typing to search by category'
+          value={value}
+        />
 
-          {value && <span onClick={clearSearch}>X</span>}
+        {value && <span onClick={clearSearch}>X</span>}
 
-          <button>Go</button>
-        </form>
-        <div className="suggestions">
-          {/* {value && BlogData.map((suggestion) =>
-          <p onClick={() => {handleSuggest(suggestion.category)}} key={suggestion.id}  >
-            {suggestion.category}
-          </p>
+        <button>Go</button>
+      </form>
 
-        ) } */}
+      <div className="suggestions">
 
-          {value && blogData.filter((dropdown) =>
-            dropdown.category.toLowerCase().startsWith(value.toLowerCase()) && dropdown.category !== value
-          ).map((suggestion) =>
-            <p className='suggestions-list' onClick={() => {
-              handleSuggest(suggestion.category)
-            }}
-              key={suggestion.id} >
-              {suggestion.category}
-            </p>
-          )
-          }
-        </div>
+        {value && blogdata.filter((dropdown) =>
+          dropdown.category?.toLowerCase().startsWith(value?.toLowerCase()) && dropdown.category !== value
+        ).map((suggestion) =>
+
+          <div className='suggestions-list' onClick={handleSuggest}
+            key={suggestion.id} >
+             <span>Category : </span>   
+           <span className='category-list'> {suggestion.category}</span>
+          </div>
+        )
+        }
       </div>
-     
+    </div>
+
   )
 }
+
+// suggestion.category
+
+// { searchKey, handleSearchResults, handleClearSearch }

@@ -1,28 +1,30 @@
+import axios from "../../Components/Comman/FetchData/Api";
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Chip } from '../../Components/Comman/Chip/Chip';
 import { EmptyList } from '../../Components/Comman/EmptyList/EmptyList';
-import { FetchData } from '../../Components/Comman/FetchData/FetchData';
-// import { BlogData } from '../../Config/BlogData';
 import './Blog.css'
-
 
 export const Blog = () => {
 
-  const { data: blogData } = FetchData("http://localhost:3333/BlogDb");
   const { id } = useParams();
-  const [blog, setBlog] = useState(null)
+  const [blog, setBlog] = useState(null);
+  const api = "/BlogDb";
 
+
+  const api2 = async () => {
+    await axios.get(api + '/' +  id).then((response) =>
+      setBlog(response.data)
+    )
+  };
 
   useEffect(() => {
-    let blog = blogData.find((blog) => blog.id === parseInt(id));
-    
-    if (blog) {
-      setBlog(blog)
-    }
-  }, [blogData, id])
+    api2();
+    console.log(blog);
 
-  console.log(blog);
+  }, []);
+
+
 
   return (
     <div>

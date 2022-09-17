@@ -13,7 +13,7 @@
       "authorName": "John Doe",
       "authorAvatar": "/assets/images/author.jpg",
       "createdAt": "June 03, 2022",
-      "cover": "/assets/images/designer-1.jpg"
+      "cover": "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
     },
     {
       "id": 2,
@@ -28,7 +28,7 @@
       "authorName": "John Doe",
       "authorAvatar": "/assets/images/author.jpg",
       "createdAt": "June 04, 2022",
-      "cover": "/assets/images/f67396fc3cfce63a28e07ebb35d974ac.jpg"
+      "cover": "https://images.unsplash.com/photo-1518860308377-800f02d5498a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhdmVsfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=1000&q=60"
     },
     {
       "id": 3,
@@ -43,7 +43,7 @@
       "authorName": "John Doe",
       "authorAvatar": "/assets/images/author.jpg",
       "createdAt": "June 05, 2022",
-      "cover": "/assets/images/fQwuyKJ9qxjSbr6REcgtmW-1200-80.jpg"
+      "cover": "https://images.unsplash.com/photo-1583594454973-4ddbab9dfd0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2hvcHBpbmd8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
       "id": 4,
@@ -58,7 +58,7 @@
       "authorName": "John Doe",
       "authorAvatar": "/assets/images/author.jpg",
       "createdAt": "June 06, 2022",
-      "cover": "/assets/images/graphic-design-trends.png"
+      "cover": "https://images.unsplash.com/photo-1500579886065-5a7705cbf1f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YWR2ZW50dXJlfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
       "id": 5,
@@ -73,7 +73,7 @@
       "authorName": "John Doe",
       "authorAvatar": "/assets/images/author.jpg",
       "createdAt": "June 07, 2022",
-      "cover": "/assets/images/make-it-personal.jpg"
+      "cover": "https://images.unsplash.com/photo-1662722794692-2f955a0d2dd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dmVnJTIwY29va2luZ3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
     },
     {
       "id": 6,
@@ -88,7 +88,7 @@
       "authorName": "John Doe",
       "authorAvatar": "/assets/images/author.jpg",
       "createdAt": "June 08, 2022",
-      "cover": "/assets/images/Purple-Combination-colors-graphic-design-predictions-1024x576-1024x576.jpg"
+      "cover": "https://images.unsplash.com/photo-1515718897441-ded18251b03e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FzdGxlfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
       "id": 7,
@@ -103,13 +103,13 @@
       "authorName": "John Doe",
       "authorAvatar": "/assets/images/author.jpg",
       "createdAt": "June 09, 2022",
-      "cover": "/assets/images/Synthwave-Postmodern.jpg"
+      "cover": "https://images.unsplash.com/photo-1583243535720-8bb8a491d6ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGFydHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
     },
     {
       "title": "Trading",
       "authorName": "Aman",
       "createdAt": "2022-08-29",
-      "cover": "",
+      "cover": "/p2.jpg",
       "description": "heloo",
       "id": 8
     },
@@ -133,7 +133,7 @@
       "title": "Trading",
       "authorName": "Aman",
       "createdAt": "2022-08-29",
-      "cover": "C:\\fakepath\\Screenshot (1).png",
+      "cover": ".Pictures/p1.avif",
       "description": "heloo",
       "id": 11
     },
@@ -141,7 +141,8 @@
       "title": "Job vs Busn",
       "authorName": "Aman",
       "createdAt": "2022-08-30",
-      "cover": "",
+      "cover-name": "p2.jpg",
+      "cover": "/Pictures/p2.jpg",
       "authorAvatar": "",
       "category": "Economic",
       "description": "Hello its a demo text",
@@ -150,6 +151,65 @@
         "Business"
       ],
       "id": 12
+    },
+    {
+      "title": "EHllo",
+      "authorName": "aman",
+      "createdAt": "2022-09-10",
+      "cover": "/Pictures/p2.jpg",
+      "authorAvatar": "Pictures/p2.jpg",
+      "category": "Hello",
+      "description": "this is a dummy description for testing\n",
+      "subCategory": [
+        "hii"
+      ],
+      "id": 13
+    },
+    {
+      "title": "EHllo",
+      "authorName": "aman",
+      "createdAt": "2022-09-10",
+      "cover": "",
+      "authorAvatar": "C:\\fakepath\\Screenshot (1).png",
+      "category": "Hello",
+      "description": "this is a dummy description for testing\n",
+      "subCategory": [
+        "hii"
+      ],
+      "id": 14
+    },
+    {
+      "title": "Dummy",
+      "authorName": "Aman 2",
+      "createdAt": "2022-09-10",
+      "cover": "",
+      "authorAvatar": "C:\\fakepath\\Screenshot (1).png",
+      "category": "Dummy",
+      "description": "Dummy example",
+      "subCategory": "",
+      "id": 15
+    },
+    {
+      "title": "Dummy 2",
+      "authorName": "aman 3",
+      "createdAt": "2022-09-10",
+      "cover": "",
+      "authorAvatar": "C:\\fakepath\\Screenshot (1).png",
+      "category": "Dummy 333",
+      "description": "Hthis is again a dummy text",
+      "subCategory": "",
+      "id": 16
+    },
+    {
+      "title": "Dummy xyz",
+      "authorName": "aman67676",
+      "createdAt": "2022-09-10",
+      "cover": "",
+      "authorAvatar": "C:\\fakepath\\Screenshot (1).png",
+      "category": "Hello xyz",
+      "description": "helo itz a dummy",
+      "subCategory": "",
+      "id": 17
     }
   ]
 }
