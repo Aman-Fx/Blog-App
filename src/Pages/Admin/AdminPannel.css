@@ -1,0 +1,26 @@
+.sidebar{
+    width: 250px;
+    height: 800px;
+    background-color: #2F4050;
+}
+
+.sidebar h2{
+    text-align: center;
+    color: #6f4e37;
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding: 20px ;
+    margin-top: 0;
+}
+
+.side-list{
+    color: white;
+}
+
+.side-list ul{
+    line-height: 50px;
+}
+
+.side-list ul li{
+    border-left: 3px solid #6f4e37;
+}

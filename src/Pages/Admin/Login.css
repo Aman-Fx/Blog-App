@@ -1,12 +1,23 @@
-.formwrap {
+.loginpage {
+
     display: flex;
     justify-content: center;
     background-color: #f0f0f0;
     width: 400px;
-    margin: 0 auto;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.formwrap {
+    width: 90%;
 }
 
 .formwrap h2 {
@@ -16,7 +27,7 @@
 
 .formwrap div {
     display: flex;
-    margin: 20px auto;
+    margin: 20px;
     align-items: center;
 
 }
@@ -27,7 +38,7 @@
 }
 
 .formwrap button {
-    margin: 10px auto;
+    margin: 30px auto;
     outline: none;
     border: none;
     padding: 0.5rem 1rem;
@@ -35,11 +46,11 @@
     background-color: #0f52ba;
     color: #fff;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
 }
 
 .formwrap input {
-    margin: auto 10px;
+    text-align: center;
     overflow: hidden;
     flex: 1rem;
     padding: 4px;
