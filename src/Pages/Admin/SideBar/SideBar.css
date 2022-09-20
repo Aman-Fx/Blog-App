@@ -1,0 +1,64 @@
+.sidebar {
+    width: 250px;
+    height: 800px;
+    background-color: #2D0001;
+    position: fixed;
+
+}
+
+.sidebar .text {
+    text-align: center;
+    color: #B17E4B;
+    background-color: #F8F9E4;
+    font-size: 20px;
+    /* padding: 15px  ; */
+    margin-top: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+nav ul li {
+    line-height: 65px;
+}
+
+nav ul li {
+    position: relative;
+    color: #F8F9E4;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 40px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    border-left: 3px solid #F8F9E4;
+}
+
+nav ul li:hover {
+    color: #2D0001;
+    background-color: #F8F9E4;
+    border-left: 6px solid #2D0001;
+}
+
+nav ul ul {
+    position: static;
+    /* display: none; */
+
+}
+
+nav ul ul li {
+    line-height: 35px;
+    padding-left: 80px;
+}
+
+nav ul ul li a{
+    text-decoration: none;
+    color: #F8F9E4;
+    display: block;
+    width: 100%;
+}
+nav ul ul li a:hover{
+    color: #2D0001;
+}

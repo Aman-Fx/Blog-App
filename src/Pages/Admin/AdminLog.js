@@ -31,10 +31,9 @@ export const AdminLog = () => {
                 history('/AdminPannel');
             }
             else {
-               alert("Invalid Credentials");
+                alert("Invalid Credentials");
             }
         }
-       
     }
 
     return (
