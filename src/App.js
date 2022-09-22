@@ -8,6 +8,9 @@ import { AdminLog } from './Pages/Admin/AdminLog';
 import { AdminPannel } from './Pages/Admin/Pannel/AdminPannel';
 import { SideBar } from './Pages/Admin/SideBar/SideBar';
 import { AllPost } from './Pages/Admin/Postes/AllPost';
+import { AddPost } from './Pages/Admin/Postes/AddPost';
+import { AllCate } from './Pages/Admin/Postes/Category/AllCate';
+import { Category } from '@mui/icons-material';
 
 const App = () => {
   return (
@@ -22,6 +25,9 @@ const App = () => {
             <Route path='/AdminPannel' element={<AdminPannel />} />
             <Route path='/SideBar' element={<SideBar />} />
             <Route path='/AllPost' element={<AllPost />} />
+            <Route path='/AddPost' element={<AddPost/>} />
+            <Route path='/AllCate' element={<AllCate/>} />
+            <Route path='/Category' element={<Category/>} />
           </Routes>
         </div>
       </Router>

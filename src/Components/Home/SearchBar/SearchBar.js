@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
 import './SearchBar.css'
+import {FiSearch} from "react-icons/fi"
 
 export const SearchBar = ({ handleSearchKey, formSubmit, blogs, value, handleSuggest, clearSearch }) => {
 
@@ -19,11 +20,12 @@ export const SearchBar = ({ handleSearchKey, formSubmit, blogs, value, handleSug
         <input
           type="text"
           onChange={handleSearchKey}
-          placeholder='Start typing to search by category'
+          placeholder= 'Search by category or any keyword'
           value={value}
         />
 
         {value && <span className='clearsearch' onClick={clearSearch}>X</span>}
+        {!value && <span  className='search-icon' ><FiSearch/></span> }
       </form>
 
       <div className="suggestions">

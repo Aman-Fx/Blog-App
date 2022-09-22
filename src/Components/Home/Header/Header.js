@@ -6,7 +6,7 @@ export const Header = () => {
         <header className='home-header'>
             <h2>The Coffee Times</h2>
             <p>
-                great place to learn about <br />
+                Great place to learn about <br />
                 diffrent topics...
             </p>
         </header>

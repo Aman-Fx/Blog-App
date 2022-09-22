@@ -26,3 +26,9 @@ To start the jason server, and make sure it runs on this port 3333.
 To start the npm server.
 
 
+Project snapshots-
+
+1) Home Page
+ <p align = "center">
+  <img src="Screenshot/Homepage1.png" alt="Homepage1">
+</p>

@@ -67,19 +67,12 @@ export const AddBlog = () => {
     }
   }
 
-  const userLogout = () => {
-    //UserLogin is a unique key which is declared in login page while uploading the data to the localstorage
-    localStorage.removeItem('UserLogin');
-    history("/")
-  }
-
   useEffect(() => {
     ShowError();
   }, [])
 
   return (
     <div>
-      <Link to={'/'} className="go-back"> <span> &#x2190; </span>Go Back</Link>
 
       {!isValid && <EmptyList />}
 
@@ -165,11 +158,6 @@ export const AddBlog = () => {
               <button>Submit</button>
             </div>
           </form>
-        </div>
-
-
-        <div className="add-blog-button">
-          <button onClick={userLogout}>Log Out</button>
         </div>
       </div>}
     </div>

@@ -205,3 +205,11 @@ export const Login = () => {
         </div>
     )
 }
+
+
+# UserLogout
+ const userLogout = () => {
+    //UserLogin is a unique key which is declared in login page while uploading the data to the localstorage
+    localStorage.removeItem('UserLogin');
+    history("/")
+  }

@@ -8,8 +8,8 @@ export const BlogItems = ({ blog: { id, description, title, createdAt, authorNam
         <div className='blogItem-wrap'>
             <img src={cover} alt="Cover" className='blogItem-cover' />
             <Chip label={category} />
-            <h3>{title}</h3>
-            <p className='blogItem-desc'>{description}</p>
+           <Link to={`blog/${id}`}> <h3>{title}</h3></Link>
+           <Link to={`blog/${id}`}> <p className='blogItem-desc'>{description}</p> </Link>
 
             <footer>
                 <div className="blogItem-author">
@@ -19,7 +19,6 @@ export const BlogItems = ({ blog: { id, description, title, createdAt, authorNam
                         <p>{createdAt}</p>
                     </div>
                 </div>
-                <Link className='blogItem-link' to={`blog/${id}`}><span> &#x2192; </span></Link>
             </footer>
 
         </div>

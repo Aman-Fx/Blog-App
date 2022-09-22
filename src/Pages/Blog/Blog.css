@@ -41,3 +41,7 @@
     padding: 1rem;
     margin-top: 1.5rem;
 }
+
+.blog-wrap img{
+    border-radius: 30px;
+}

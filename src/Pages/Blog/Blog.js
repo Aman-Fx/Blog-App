@@ -21,7 +21,6 @@ export const Blog = () => {
   useEffect(() => {
     api2();
     console.log(blog);
-
   }, []);
 
 
@@ -47,7 +46,7 @@ export const Blog = () => {
             </div>
 
           </header>
-          <img src="{cover}" alt="cover" />
+          <img src={blog.cover} alt="cover" />
 
           <p className='blog-desc'> {blog.description}</p>
         </div>
