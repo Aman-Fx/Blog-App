@@ -29,6 +29,6 @@ To start the npm server.
 Project snapshots-
 
 1) Home Page
- <p align = "center">
+ <p align = "center" border = "20px">
   <img src="Screenshot/Homepage1.png" alt="Homepage1">
 </p>
