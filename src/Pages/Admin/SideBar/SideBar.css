@@ -1,6 +1,6 @@
 .sidebar {
     width: 15%;
-    height: 800px;
+    height: 1080px;
     background-color: #2D0001;
     position: fixed;
     display: flex;
@@ -58,12 +58,32 @@ nav ul ul li {
     width: 100%;
 }
 
-nav ul ul li a{
+nav ul ul a {
     text-decoration: none;
     color: #F8F9E4;
     display: block;
     width: 100%;
 }
-nav ul ul li a:hover{
+nav ul ul li:hover{
     color: #2D0001;
+}
+
+.all .active li{
+    color: #2D0001;
+    background-color: #F8F9E4;
+    border-left: 6px solid #2D0001;
+}
+
+.log-out{
+    text-align: center;
+    color: #2D0001;
+    margin: 30px auto;
+    cursor: pointer;
+    background-color:#F8F9E4;
+    padding: 7px;
+    border-radius: 5px;
+}
+.log-out:hover{
+    box-shadow: #580a0b 2px 2px 7px 1px;
+    color: #580a0b;
 }

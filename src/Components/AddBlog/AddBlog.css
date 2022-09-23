@@ -1,31 +1,35 @@
 .add-blog {
     text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.add-blog h1{
+    color: #580a0b;
 }
 
 
 .blog-input {
     display: flex;
     flex-direction: column;
-    background-color: #f0f0f0;
+    background-color: #F8F9E4;
     margin: 20px auto;
-    padding: 30px;
-    border-radius: 25px;
+    padding: 20px;
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
-    max-width: 60%;
+    max-width: 75%;
+    line-height: 25px;
 }
 
 .blog-input div {
+    color: #2D0001;
     margin: 8px auto;
     overflow: hidden;
     width: 100%;
+    font-weight: 500;
 }
 
-/* .blog-input span {
-    color: gray;
-    font-size: x-small;
-    margin-left: 10px;
-} */
 
 .opt-text {
     color: gray;
@@ -40,7 +44,7 @@
     outline: none;
     border: 1px solid gainsboro;
     border-radius: 6px;
-    height: 20px;
+    line-height: 25px;
     width: 95%;
     background-color: white;
 }
@@ -54,15 +58,15 @@
     border: 1px solid gainsboro;
     border-radius: 6px;
     height: 20px;
-    width: 95%
+    width: 95%;
 }
 
 .blog-input button {
     width: 20%;
     padding: 8px;
-    background-color: #0f52ba;
+    background-color: #2D0001;
     border: none;
-    border-radius: 20px;
+    border-radius: 7px;
     color: white;
     font-size: 15px;
     display: flex;
@@ -70,37 +74,8 @@
     align-items: center;
     margin: 0 auto;
     cursor: pointer;
+    font-weight: 500;
 
-}
-
-.add-blog-button {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0 auto;
-}
-
-.add-blog-button button {
-    color: white;
-    background-color: black;
-    border-radius: 20px;
-    padding: 5px 10px;
-    cursor: pointer;
-
-}
-
-.sub-category input {
-    width: 90%;
-}
-
-.sub-category span {
-    margin-left: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    color: gray;
-}
-
-.sub-category span :hover {
-    color: maroon;
 }
 
 .blog-input p {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import "./SideBar.css";
 
 export const SideBar = () => {
@@ -18,16 +18,18 @@ export const SideBar = () => {
                     <li
                         onClick={() => setShowPost(!showPost)}
                     > Posts   </li>
-                    {showPost && <ul>
-                        <li > <Link to={"/AllPost"} > All Posts</Link> </li>
-                        <li > <Link to={"/AddPost"} >Add New</Link> </li>
+                    {showPost && <ul >
+                        <NavLink to={"/AllPost"} > <li>All Posts</li> </NavLink>
+                        <NavLink to={"/AddPost"} > <li>Add New</li> </NavLink>
                     </ul>}
                     <li onClick={() => setShowCate(!showCate)}> Category  </li>
                     {showCate && <ul>
-                        <li  > <Link to={"/AllCate"} >All Category</Link> </li>
-                        <li ><Link to={""}  >Add New</Link></li>
+                        <NavLink to={"/AllCate"} > <li>All Category</li> </NavLink>
+                        <NavLink to={"/AddNew"}  > <li>Add New</li> </NavLink>
                     </ul>}
                 </ul>
+
+                <h5 className='log-out'>Log out</h5>
             </nav>
         </div>
     )
