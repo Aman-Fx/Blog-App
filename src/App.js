@@ -11,6 +11,7 @@ import { AllPost } from './Pages/Admin/Postes/AllPost';
 import { AddPost } from './Pages/Admin/Postes/AddPost';
 import { AllCate } from './Pages/Admin/Postes/Category/AllCate';
 import { Category } from '@mui/icons-material';
+import { EmptyList } from './Components/Comman/EmptyList/EmptyList';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
             <Route path='/AddPost' element={<AddPost/>} />
             <Route path='/AllCate' element={<AllCate/>} />
             <Route path='/Category' element={<Category/>} />
+            <Route path= '*' element= {<EmptyList/> } />
           </Routes>
         </div>
       </Router>

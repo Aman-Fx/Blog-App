@@ -13,7 +13,7 @@ export const Blog = () => {
 
 
   const api2 = async () => {
-    await axios.get(api + '/' +  id).then((response) =>
+    await axios.get(api + '/' + id).then((response) =>
       setBlog(response.data)
     )
   };
@@ -29,28 +29,24 @@ export const Blog = () => {
     <div>
       <Link to={'/'} className="go-back"> <span> &#x2190; </span>Go Back</Link>
 
-      {blog ? (
+      {blog ?
         <div className='blog-wrap'>
+
           <header>
             <p className='blog-date'> Published {blog.createdAt}</p>
-
             <h1>{blog.title}</h1>
-
-            <div className='blog-subcategory'>
-              {blog.subCategory.map((category, index) => (
-                <div key={index}>
-                  <Chip key={index} label={category} />
-                </div>
-
-              ))}
-            </div>
-
           </header>
+
           <img src={blog.cover} alt="cover" />
+          <div className='blog-subcategory'>
+            <div>
+              <Chip label={blog.category} />
+            </div>
+          </div>
 
           <p className='blog-desc'> {blog.description}</p>
         </div>
-      ) : (<EmptyList />)
+        : (<EmptyList />)
       }
 
 

@@ -32,3 +32,19 @@ Project snapshots-
  <p align = "center">
   <img src="Screenshot/Homepage1.png" alt="Homepage1">
 </p>
+
+2) Category dropdown suggestions
+<p align = "center">
+  <img src="Screenshot/Dropdown.png" alt="Homepage1">
+</p>
+
+3) A Detail Page
+<p align = "center">
+  <img src="Screenshot/DetailPage.png" alt="Homepage1">
+</p>
+
+Now Let's come back to the home page
+4) A Load more feature
+<p align = "center">
+  <img src="Screenshot/LoadMore.png" alt="Homepage1">
+</p>
