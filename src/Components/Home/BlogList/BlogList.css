@@ -26,6 +26,10 @@
     border-radius: 10px;
 }
 
+.btn button:hover{
+    background: linear-gradient(to right, #a7bfe8, #6190e8, #a7bfe8);
+}
+
 .btn p {
     font-size: 0.8rem;
     color: #a9a9a9;

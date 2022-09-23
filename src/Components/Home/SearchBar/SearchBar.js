@@ -36,8 +36,10 @@ export const SearchBar = ({ handleSearchKey, formSubmit, blogs, value, handleSug
 
           <div className='suggestions-list' onClick={() => { handleSuggest(suggestion.category) }}
             key={suggestion.id} >
+              <div className='category-list'>
             <span>Category : </span>
-            <span className='category-list'> {suggestion.category}</span>
+            <span> {suggestion.category}</span>
+            </div>
           </div>
         )
         }
