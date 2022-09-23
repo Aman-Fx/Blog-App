@@ -58,3 +58,9 @@ Now Let's come back to the home page <br />
 <p align = "center">
   <img src="Screenshot/End.png" alt="Homepage1">
 </p>
+
+7) Admin pannel <br/>
+Where the admin can perform CRUD operations
+<p align = "center">
+  <img src="Screenshot/Addpost.png" alt="Homepage1">
+</p>
