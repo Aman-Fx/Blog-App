@@ -1,5 +1,6 @@
 import axios from '../../../../Components/Comman/FetchData/Api';
 import React, { useEffect, useState } from 'react';
+import "./Category.css"
 
 export const Category = () => {
     const [data, setData] = useState([]);
@@ -16,14 +17,28 @@ export const Category = () => {
     }, []);
 
     return (
-        <div>
+        <div className='allCate'>
+            <h2>All Categories</h2>
             {data.length > 0 && <div>
-                {data.map((item, index) =>
-                    <div key={item.id}>{ item.category && index}{item.category}</div>
-                )}
-            </div> }
+                <table>
+                    <tr>
+                        <th>Index</th>
+                        <th>Category</th>
+                    </tr>
+
+                    {data.map((item, index) =>
+                        <tr key={item.id}>
+                            <td>{item.category && index + 1}</td>
+                            <td>{item.category}</td>
+                        </tr>
+                    )}
+
+
+                </table>
+
+            </div>}
         </div>
-            
-       
+
+
     )
 }

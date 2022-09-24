@@ -96,11 +96,10 @@ export const AddBlog = () => {
               onChange={(e) => setDescription(e.target.value)}
               required />
           </div>
-
-          <div>
+        </form>
+          <div className="formSubmit" >
             <button>Submit</button>
           </div>
-        </form>
       </div>
 
     </div>

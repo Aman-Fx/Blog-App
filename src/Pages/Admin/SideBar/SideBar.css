@@ -1,7 +1,7 @@
 .sidebar {
     width: 15%;
     height: 1080px;
-    background-color: #2D0001;
+    background-color: #171717;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -10,8 +10,8 @@
 
 .sidebar .text {
     text-align: center;
-    color: #B17E4B;
-    background-color: #F8F9E4;
+    color: #0080ff;
+    background-color: #f0f0f0;
     font-size: 20px;
     /* padding: 15px  ; */
     margin-top: 0;
@@ -32,7 +32,7 @@ nav ul li {
 
 nav ul li {
     position: relative;
-    color: #F8F9E4;
+    color: #f0f0f0;
     text-decoration: none;
     cursor: pointer;
     padding-left: 40px;
@@ -42,9 +42,9 @@ nav ul li {
 }
 
 nav ul li:hover {
-    color: #2D0001;
-    background-color: #F8F9E4;
-    border-left: 6px solid #2D0001;
+    color: black;
+    background-color: #f0f0f0;
+    border-left: 6px solid black;
 }
 
 nav ul ul {
@@ -65,18 +65,19 @@ nav ul ul a {
     width: 100%;
 }
 nav ul ul li:hover{
-    color: #2D0001;
+    color: black;
+    background-color: white;
 }
 
 .all .active li{
-    color: #2D0001;
-    background-color: #F8F9E4;
-    border-left: 6px solid #2D0001;
+    color: #7E7C73;
+    background-color: white;
+    border-left: 6px solid #0080ff;
 }
 
 .log-out{
     text-align: center;
-    color: #2D0001;
+    color: #171717;
     margin: 30px auto;
     cursor: pointer;
     background-color:#F8F9E4;
@@ -84,6 +85,6 @@ nav ul ul li:hover{
     border-radius: 5px;
 }
 .log-out:hover{
-    box-shadow: #580a0b 2px 2px 7px 1px;
-    color: #580a0b;
+    box-shadow: #3f3f39 2px 2px 7px 1px;
+    color: #0080ff;
 }

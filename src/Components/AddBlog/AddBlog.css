@@ -5,14 +5,14 @@
 }
 
 .add-blog h1{
-    color: #580a0b;
+    color: #0080ff;
 }
 
 
 .blog-input {
     display: flex;
     flex-direction: column;
-    background-color: #F8F9E4;
+    background-color: #f0f0f0;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
@@ -23,7 +23,7 @@
 }
 
 .blog-input div {
-    color: #2D0001;
+    /* color: #2D0001; */
     margin: 8px auto;
     overflow: hidden;
     width: 100%;
@@ -38,7 +38,6 @@
 }
 
 .blog-input input {
-    margin: 5px auto;
     flex: 1rem;
     padding: 6px;
     outline: none;
@@ -46,6 +45,7 @@
     border-radius: 6px;
     line-height: 25px;
     width: 95%;
+    margin: 5px auto;
     background-color: white;
 }
 
@@ -61,10 +61,10 @@
     width: 95%;
 }
 
-.blog-input button {
+.formSubmit button {
     width: 20%;
     padding: 8px;
-    background-color: #2D0001;
+    background-color: #171717;
     border: none;
     border-radius: 7px;
     color: white;
@@ -72,7 +72,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 30px auto;
     cursor: pointer;
     font-weight: 500;
 
