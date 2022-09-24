@@ -1,11 +1,18 @@
 import React from 'react';
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import "./SideBar.css";
 
 export const SideBar = () => {
     const [showPost, setShowPost] = useState(true);
     const [showCate, setShowCate] = useState(true);
+    const history = useNavigate();
+
+    //Logout 
+    const Logout = () => {
+        localStorage.removeItem('Logged-in');
+        history("/")
+    }
 
     return (
         <div className='all'>
@@ -25,11 +32,10 @@ export const SideBar = () => {
                     <li onClick={() => setShowCate(!showCate)}> Category  </li>
                     {showCate && <ul>
                         <NavLink to={"/AllCate"} > <li>All Category</li> </NavLink>
-                        <NavLink to={"/AddNew"}  > <li>Add New</li> </NavLink>
+                        <NavLink to={"/AddCate"}  > <li>Add New</li> </NavLink>
                     </ul>}
                 </ul>
-
-                <h5 className='log-out'>Log out</h5>
+                <h5 className='log-out' onClick={Logout}>Log out</h5>
             </nav>
         </div>
     )

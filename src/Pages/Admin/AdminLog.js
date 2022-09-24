@@ -3,8 +3,9 @@ import './Login.css';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from 'yup';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Credentials } from './Credentials';
+import { FiHome } from 'react-icons/fi';
 
 const Schema = yup.object().shape({
     Username: yup.string().required("username is required"),
@@ -27,7 +28,7 @@ export const AdminLog = () => {
                 Credentials.filter((item) =>
                     item.username === data.Username && item.Password === data.Password);
             if (getCredentials.length > 0) {
-                console.log(getCredentials);
+                localStorage.setItem('Logged-in', "SecretKey" );
                 history('/AdminPannel');
             }
             else {
@@ -37,7 +38,9 @@ export const AdminLog = () => {
     }
 
     return (
-        <div><div className='loginpage'>
+        <div>
+            <Link to={'/'} className="go-home"><FiHome/></Link>
+            <div className='loginpage'>
             <div className='formwrap'>
                 <form name='loginForm' id='login-id' onSubmit={handleSubmit(submitForm)}>
                     <h2>Login</h2>

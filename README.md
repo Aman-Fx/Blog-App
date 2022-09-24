@@ -59,7 +59,13 @@ Now Let's come back to the home page <br />
   <img src="Screenshot/End.png" alt="Homepage1">
 </p>
 
-7) Admin pannel <br/>
+7) Admin Login <br />
+To access the Admin login page use /admin
+<p align = "center">
+  <img src="Screenshot/AdminLogin.png" alt="Homepage1">
+</p>
+
+8) Admin pannel <br/>
 Where the admin can perform CRUD operations
 <p align = "center">
   <img src="Screenshot/Addpost.png" alt="Homepage1">
