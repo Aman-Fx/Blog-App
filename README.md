@@ -15,7 +15,7 @@ Open [http://localhost:3000] to view it in your browser.
 
 Run the cmd to install all the dependencies.
 
-### 'npm run json-server'
+### `npm run json-server`
 
 To start the Json server.
 
@@ -66,4 +66,8 @@ To access the Admin login page use /admin
 Where the admin can perform CRUD operations
 <p align = "center">
   <img src="Screenshot/Addpost.png" alt="Homepage1">
+</p>
+<br/>
+<p align = "center">
+  <img src="Screenshot/AllCate.png" alt="Homepage1">
 </p>

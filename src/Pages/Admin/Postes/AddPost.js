@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import { FiHome } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import { AddBlog } from '../../../Components/AddBlog/AddBlog'
 import { EmptyList } from '../../../Components/Comman/EmptyList/EmptyList';
 import { SideBar } from '../SideBar/SideBar'
@@ -11,7 +13,7 @@ export const AddPost = () => {
   //Only accessible if user is looged in.
   const ShowError = () => {
     const getuser = localStorage.getItem('Logged-in');
-    if (getuser.length) {
+    if (getuser && getuser.length) {
       setIsValid(true);
     }
   }
@@ -25,7 +27,9 @@ export const AddPost = () => {
       <div className='side-container' ><SideBar /> </div>
       <div className='content'> <AddBlog /> </div>
     </div> :
-    <EmptyList />}
+    <div> <Link to={'/'} className="go-home"><FiHome/></Link>
+    <EmptyList />
+    </div>}
   </div>
   )
 }
