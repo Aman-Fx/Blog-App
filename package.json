@@ -18,6 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "json-server": "json-server --watch -p3333 Data/BlogsDb.json",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
