@@ -1,16 +1,16 @@
 import axios from "../../Components/Comman/FetchData/Api";
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { Chip } from '../../Components/Comman/Chip/Chip';
 import { EmptyList } from '../../Components/Comman/EmptyList/EmptyList';
 import './Blog.css'
 
 export const Blog = () => {
+  const navigate = useNavigate();
 
   const { id } = useParams();
   const [blog, setBlog] = useState(null);
   const api = "/BlogDb";
-
 
   const api2 = async () => {
     await axios.get(api + '/' + id).then((response) =>
@@ -27,8 +27,7 @@ export const Blog = () => {
 
   return (
     <div>
-      <Link to={'/'} className="go-back"> <span> &#x2190; </span>Go Back</Link>
-
+      <span className="go-back" onClick={() => { navigate(-1) }}> &#x2190; Go Back</span>
       {blog ?
         <div className='blog-wrap'>
 
@@ -45,6 +44,14 @@ export const Blog = () => {
           </div>
 
           <p className='blog-desc'> {blog.description}</p>
+
+          <hr />
+
+          <div className="aurthor-detail">
+            <img src= {blog.authorAvatar} alt="Author Avatar" />
+            <address> -Written by {blog.authorName}</address>
+
+          </div>
         </div>
         : (<EmptyList />)
       }

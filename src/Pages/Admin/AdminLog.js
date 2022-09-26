@@ -6,7 +6,7 @@ import * as yup from 'yup';
 import { Link, useNavigate } from 'react-router-dom';
 import { Credentials } from './Credentials';
 import { FiHome } from 'react-icons/fi';
-import { AdminPannel } from './Pannel/AdminPannel';
+import { AllPost } from './Postes/AllPost';
 
 const Schema = yup.object().shape({
     Username: yup.string().required("username is required"),
@@ -17,7 +17,6 @@ export const AdminLog = () => {
 
     const [isLogged, setIsLogged] = useState(false);
 
-    const history = useNavigate();
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm({
         resolver: yupResolver(Schema),
@@ -33,7 +32,6 @@ export const AdminLog = () => {
                     item.username === data.Username && item.Password === data.Password);
             if (getCredentials.length > 0) {
                 localStorage.setItem('Logged-in', "SecretKey");
-                // history('/AdminPannel');
                 setIsLogged(true);
             }
             else {
@@ -54,7 +52,7 @@ export const AdminLog = () => {
 
     return (
         <div>
-            {isLogged ? <AdminPannel /> :
+            {isLogged ? <AllPost/> :
                 <div>
                     <Link to={'/'} className="go-home"><FiHome /></Link>
                     <div className='loginpage'>

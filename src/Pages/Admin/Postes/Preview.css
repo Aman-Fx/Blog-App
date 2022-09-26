@@ -1,0 +1,21 @@
+.delete-post{
+    display: flex;
+    flex-direction: column  ;
+}
+.delete-post button {
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    padding: .3rem 0.5rem;
+    border-radius: 5px;
+    width: fit-content;
+    border: none;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+.delete-post button:hover{
+    background-color: red;
+    font-weight: 500;
+    box-shadow: #3f3f39 2px 2px 10px 1px;
+}

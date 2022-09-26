@@ -12,6 +12,7 @@ import { AddPost } from './Pages/Admin/Postes/AddPost';
 import { AllCate } from './Pages/Admin/Postes/Category/AllCate';
 import { EmptyList } from './Components/Comman/EmptyList/EmptyList';
 import { AddCate } from './Pages/Admin/Postes/Category/AddCate';
+import { Preview } from './Pages/Admin/Postes/Preview';
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
             <Route path='/AllCate' element={<AllCate />} />
             <Route path='*' element={<EmptyList />} />
             <Route path='/AddCate' element={<AddCate />} />
+            <Route path='/Preview/:id' element={<Preview />} />
           </Routes>
         </div>
       </Router>

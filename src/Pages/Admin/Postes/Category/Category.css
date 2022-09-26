@@ -8,7 +8,6 @@
     margin: 30px auto;
     border-collapse: collapse;
     width: 50%;
-    /* border: 1px solid white; */
 }
 
 .allCate th {
@@ -32,16 +31,36 @@
     padding: 10px;
     background-color: #f0f0f0;
     font-size: 0.9rem;
-    color: #a9a9a9;
+    color: #898989;
     font-weight: 500;
 
 }
 
 .item-desc {
-    width: 100px;
+    width: 120px;
     white-space: nowrap;
-    max-height: 20px;
+    line-height: 22px;
     overflow: hidden;
     text-overflow: ellipsis;
     padding-right: 0.6rem;
+    text-align: justify;
+   
+}
+
+.item-desc-icon {
+    width: 70px;
+    display: block;
+    overflow: hidden;
+}
+
+
+.item-desc-icon a{
+    text-decoration: none;
+    color: #171717;
+}
+.item-desc-icon a :hover {
+    cursor: pointer;
+    font-size: 18px;
+    color: #0080ff;
+
 }

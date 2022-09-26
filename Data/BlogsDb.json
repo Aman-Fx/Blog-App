@@ -4,7 +4,7 @@
       "id": 1,
       "title": "7 CSS tools you should be using",
       "category": "development",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "authorName": "Mr. Bean",
       "authorAvatar": "https://i.pinimg.com/originals/70/b6/6d/70b66d7968e7f6578d315d564781fed8.jpg",
       "createdAt": "June 03, 2022",
@@ -14,7 +14,6 @@
       "id": 2,
       "title": "Milan Places That Highlight The City",
       "category": "travel",
-      
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "authorName": "Mr. Bean",
       "authorAvatar": "https://i.pinimg.com/originals/70/b6/6d/70b66d7968e7f6578d315d564781fed8.jpg",
@@ -25,7 +24,6 @@
       "id": 3,
       "title": "Online Shopping – An Alternative to Shopping in the Mall",
       "category": "shopping",
-      
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "authorName": "Mr. Bean",
       "authorAvatar": "https://i.pinimg.com/originals/70/b6/6d/70b66d7968e7f6578d315d564781fed8.jpg",
@@ -36,7 +34,7 @@
       "id": 4,
       "title": "ADVENTURE IN YOU",
       "category": "adventure",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "authorName": "Mr. Bean",
       "authorAvatar": "https://i.pinimg.com/originals/70/b6/6d/70b66d7968e7f6578d315d564781fed8.jpg",
       "createdAt": "June 06, 2022",
@@ -46,7 +44,7 @@
       "id": 5,
       "title": "Loaded BBQ Baked Potatoes",
       "category": "cooking",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "authorName": "Mr. Bean",
       "authorAvatar": "https://i.pinimg.com/originals/70/b6/6d/70b66d7968e7f6578d315d564781fed8.jpg",
       "createdAt": "June 07, 2022",
@@ -56,7 +54,7 @@
       "id": 6,
       "title": "Beyond the Beach",
       "category": "travel",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "authorName": "Mr. Bean",
       "authorAvatar": "https://i.pinimg.com/originals/70/b6/6d/70b66d7968e7f6578d315d564781fed8.jpg",
       "createdAt": "June 08, 2022",
@@ -66,7 +64,7 @@
       "id": 7,
       "title": "Art & Perception",
       "category": "art",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "authorName": "Mr. Bean",
       "authorAvatar": "https://i.pinimg.com/originals/70/b6/6d/70b66d7968e7f6578d315d564781fed8.jpg",
       "createdAt": "June 09, 2022",
@@ -109,17 +107,6 @@
       "id": 11
     },
     {
-      "title": "Job vs Busn",
-      "authorName": "Aman",
-      "createdAt": "2022-08-30",
-      "cover-name": "p2.jpg",
-      "cover": "/Pictures/p2.jpg",
-      "authorAvatar": "https://i.pinimg.com/originals/70/b6/6d/70b66d7968e7f6578d315d564781fed8.jpg",
-      "category": "Economic",
-      "description": "Hello its a demo text",
-      "id": 12
-    },
-    {
       "title": "EHllo",
       "authorName": "aman",
       "createdAt": "2022-09-10",
@@ -127,47 +114,7 @@
       "authorAvatar": "https://i.pinimg.com/originals/70/b6/6d/70b66d7968e7f6578d315d564781fed8.jpg",
       "category": "Hello",
       "description": "this is a dummy description for testing\n",
-        "id": 13
-    },
-    {
-      "title": "EHllo",
-      "authorName": "aman",
-      "createdAt": "2022-09-10",
-      "cover": "",
-      "authorAvatar": "https://i.pinimg.com/originals/70/b6/6d/70b66d7968e7f6578d315d564781fed8.jpg",
-      "category": "Hello",
-      "description": "this is a dummy description for testing\n",
-            "id": 14
-    },
-    {
-      "title": "Dummy",
-      "authorName": "Aman 2",
-      "createdAt": "2022-09-10",
-      "cover": "",
-      "authorAvatar": "https://i.pinimg.com/originals/70/b6/6d/70b66d7968e7f6578d315d564781fed8.jpg",
-      "category": "Dummy",
-      "description": "Dummy example",
-          "id": 15
-    },
-    {
-      "title": "Dummy 2",
-      "authorName": "aman 3",
-      "createdAt": "2022-09-10",
-      "cover": "",
-      "authorAvatar": "https://i.pinimg.com/originals/70/b6/6d/70b66d7968e7f6578d315d564781fed8.jpg",
-      "category": "Dummy 333",
-      "description": "Hthis is again a dummy text",
-           "id": 16
-    },
-    {
-      "title": "Dummy xyz",
-      "authorName": "aman67676",
-      "createdAt": "2022-09-10",
-      "cover": "",
-      "authorAvatar": "https://i.pinimg.com/originals/70/b6/6d/70b66d7968e7f6578d315d564781fed8.jpg",
-      "category": "Hello xyz",
-      "description": "helo itz a dummy",
-          "id": 17
+      "id": 13
     }
   ]
 }

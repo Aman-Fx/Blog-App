@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { EmptyList } from '../../../Components/Comman/EmptyList/EmptyList';
 import { Posts } from './Category/Posts';
 
+
 export const AllPost = () => {
 
     const [isValid, setIsValid] = useState(false);

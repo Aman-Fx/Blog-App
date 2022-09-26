@@ -1,6 +1,9 @@
 import axios from '../../../../Components/Comman/FetchData/Api';
 import React, { useEffect, useState } from 'react';
 // import './Posts.css';
+import { MdArrowForward } from 'react-icons/md';
+import { MdModeEdit } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 export const Posts = () => {
     const [data, setData] = useState([]);
@@ -27,30 +30,26 @@ export const Posts = () => {
                         <th>Category</th>
                         <th>description</th>
                         <th>authorName</th>
-                        <th>authorAvatar</th>
                         <th>createdAt</th>
-                        <th>cover</th>
-                        <th>Actions</th>
-                    </tr>
+                        <th>Edit</th>
+                        <th>Preview</th>
+                    </tr>   
 
-                    {data.map((item) =>
+                    {data.map((item, index) =>
                         <tr key={item.id}>
-                            <td>{item.id}</td>
+                            <td>{index+1}</td>
                             <td> <div className='item-desc'>{item.title}
                             </div>
                             </td>
-                            <td><div>{item.category}</div> </td>
+                            <td><div className='item-desc' >{item.category}</div> </td>
                             <td> <div className='item-desc'>{item.description}
                             </div>
                             </td>
-                            <td><div>{item.authorName}</div></td>
-                            <td><div className='item-desc'> <img src={item.authorAvatar} alt="AuthorAvtar" />
-                            </div>
-                            </td>
-                            <td><div>{item.createdAt}</div></td>
-                            <td><div className='item-desc'>{item.cover}
-                            </div>
-                            </td>
+                            <td><div className='item-desc' >{item.authorName}</div></td>
+                            <td><div className='item-desc' >{item.createdAt}</div></td>
+                            <td><div className='item-desc-icon'> <Link to={`/EditPost/${item.id}`}> <MdModeEdit/> </Link>  </div></td>
+                            <td><div className='item-desc-icon'> <Link to={`/Preview/${item.id}`} state > <MdArrowForward/> </Link>  </div></td>
+                        
                         </tr>
                     )}
 

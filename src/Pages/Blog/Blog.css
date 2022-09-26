@@ -6,14 +6,15 @@
 
 .go-back {
     font-size: 0.8rem;
-    text-decoration: none;
     color: #a9a9a9;
     font-weight: 500;
     margin: 2rem;
     display: block;
     cursor: pointer;
+    text-decoration: none;
 }
-.go-back:hover{
+
+.go-back:hover {
     color: #6190e8;
     font-weight: 600;
 }
@@ -35,24 +36,39 @@
     background-color: #a9a9a9;
 }
 
-.blog-subcategory{
+.blog-subcategory {
     display: flex;
     justify-content: center;
 }
 
-.blog-subcategory div{
+.blog-subcategory div {
     font-size: 00.8rem;
     margin-top: 1rem;
     font-weight: 500;
 }
 
-.blog-desc{
+.blog-desc {
     display: inline-block;
     text-align: justify;
     padding: 1rem;
     line-height: 30px;
 }
 
-.blog-wrap img{
+.blog-wrap img {
     border-radius: 15px;
+}
+
+.aurthor-detail {
+    font-size: 0.9rem;
+    color: #a9a9a9;
+    font-weight: 500;
+    margin: 2rem auto;
+    display: block;
+    text-align: right;
+}
+
+.aurthor-detail img {
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
 }
