@@ -1,0 +1,16 @@
+.addnewcate{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.addnewcate h2{
+    color: #0080ff;;
+}
+
+.addnewcate form{
+  
+}

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { EmptyList } from '../../../../Components/Comman/EmptyList/EmptyList';
 import { SideBar } from '../../SideBar/SideBar';
 import '../AllPost.css';
+import { AddnewCate } from './AddnewCate';
 
 export const AddCate = () => {
 
@@ -11,7 +12,7 @@ export const AddCate = () => {
     //Only accessible if user is looged in.
     const ShowError = () => {
         const getuser = localStorage.getItem('Logged-in');
-        if ( getuser && getuser.length) {
+        if (getuser && getuser.length) {
             setIsValid(true);
         }
     }
@@ -24,7 +25,9 @@ export const AddCate = () => {
             {isValid ?
                 <div className='outer-container'>
                     <div className='side-container' ><SideBar /> </div>
-                    <div className='content'> HHELOOOOOOO </div>
+                    <div className='content'>
+                    <AddnewCate/>
+                    </div>
                 </div> :
                 <EmptyList />}
         </div>

@@ -48,7 +48,7 @@ export const Posts = () => {
                             <td><div className='item-desc' >{item.authorName}</div></td>
                             <td><div className='item-desc' >{item.createdAt}</div></td>
                             <td><div className='item-desc-icon'> <Link to={`/EditPost/${item.id}`}> <MdModeEdit/> </Link>  </div></td>
-                            <td><div className='item-desc-icon'> <Link to={`/Preview/${item.id}`} state > <MdArrowForward/> </Link>  </div></td>
+                            <td><div className='item-desc-icon'> <Link to={`/Preview/${item.id} `}> <MdArrowForward/> </Link>  </div></td>
                         
                         </tr>
                     )}
