@@ -116,5 +116,39 @@
       "description": "this is a dummy description for testing\n",
       "id": 13
     }
+  ],
+  "Categories": [
+    {
+      "category": "development",
+      "id": 8
+    },
+    {
+      "category": "travel",
+      "id": 9
+    },
+    {
+      "category": "shopping",
+      "id": 10
+    },
+    {
+      "category": "adventure",
+      "id": 11
+    },
+    {
+      "category": "cooking",
+      "id": 12
+    },
+    {
+      "category": "art",
+      "id": 13
+    },
+    {
+      "category": "Trade",
+      "id": 14
+    },
+    {
+      "category": "bussiness",
+      "id": 15
+    }
   ]
 }

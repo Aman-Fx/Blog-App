@@ -1,16 +1,53 @@
-.addnewcate{
+.addnewcate {
     display: flex;
     flex-direction: column;
     margin: 30px auto;
-    text-align: center;
     width: 100%;
     
 }
 
-.addnewcate h2{
-    color: #0080ff;;
+.addnewcate h2 {
+    text-align: center;
+    color: #0080ff;
 }
 
-.addnewcate form{
-  
+.addnewcate form {
+    background-color: #f0f0f0;
+    width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    left: 58%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.addnewcate div{
+    text-align: center;
+}
+
+
+.addnewcate input{
+    color: #171717;
+    font-weight: 500;
+    padding: 6px;
+    width: 80%;
+    border: 1px solid gainsboro ;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+.addnewcate button {
+    width: 20%;
+    margin: 0px auto 0px auto;
+    color: #F8F9E4;
+    background-color: #171717;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
 }

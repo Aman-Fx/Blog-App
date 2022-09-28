@@ -1,5 +1,5 @@
 import axios from "../../Components/Comman/FetchData/Api";
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './AddBlog.css'
 
 export const AddBlog = () => {
@@ -12,12 +12,27 @@ export const AddBlog = () => {
   const [authorAvatar, setAuthorAvatar] = useState('')
   const [description, setDescription] = useState('');
   const [category, setCategory] = useState('');
+  const [allCate, setAllCate] = useState([]);
+
+
+  //Calling Api for Blog select tool
+
+  const api = async () => {
+    await axios.get('/Categories').then((Response) => {
+      setAllCate(Response.data)
+    })
+  };
+
+  useEffect(() => {
+    api();
+  }, []);
 
 
   //Hnadling the form submit and posting it to the jason(database)
   const handleSubmit = (e) => {
     e.preventDefault();
     alert('Blog Added!');
+
 
     const addedBlog = { title, authorName, createdAt, cover, authorAvatar, category, description };
 
@@ -29,9 +44,6 @@ export const AddBlog = () => {
         console.log(error);
       })
   }
-
-
-
 
   return (
     <div>
@@ -81,12 +93,18 @@ export const AddBlog = () => {
           </div>
 
           <div>
-            <label htmlFor="">Category:</label><br />
-            <input type="text"
+            <label htmlFor="Category">Category:</label>
+            {/* <input type="text"
               placeholder='Blog category'
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              required />
+              required /> */}
+
+            {/* <select className="custom-select">
+              {allCate.map((item)=>
+                <option value='cate' key ={item.id} onChange={(e) => setCategory(e.target.value)}> {item.category}</option>
+              )}
+            </select> */}
           </div>
 
           <div>
@@ -97,9 +115,9 @@ export const AddBlog = () => {
               required />
           </div>
         </form>
-          <div className="formSubmit" >
-            <button>Submit</button>
-          </div>
+        <div className="formSubmit" >
+          <button>Submit</button>
+        </div>
       </div>
 
     </div>

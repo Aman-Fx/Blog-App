@@ -4,7 +4,7 @@
     max-height: 100%;
 }
 
-.add-blog h1{
+.add-blog h1 {
     color: #0080ff;
 }
 
@@ -75,8 +75,18 @@
     margin: 30px auto;
     cursor: pointer;
     font-weight: 500;
-
 }
+
+.custom-select {
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #171717;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+
 
 .blog-input p {
     display: flex;
@@ -89,7 +99,7 @@
     color: #f0f0f0;
     padding: 5px;
     width: 5%;
-    margin: 8px auto ;
+    margin: 8px auto;
     border-radius: 20px;
 
 }

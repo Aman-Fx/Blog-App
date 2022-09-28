@@ -65,3 +65,8 @@
     color: #0080ff;
 }
 
+/* To delete category */
+.del-cate{
+    cursor: pointer;
+    color: #171717;
+}
