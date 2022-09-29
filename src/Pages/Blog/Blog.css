@@ -8,10 +8,11 @@
     font-size: 0.8rem;
     color: #a9a9a9;
     font-weight: 500;
-    margin: 2rem;
+    margin: 2rem 0 0 2rem;
     display: block;
     cursor: pointer;
     text-decoration: none;
+    width: fit-content;
 }
 
 .go-back:hover {

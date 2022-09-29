@@ -57,25 +57,34 @@ Now Let's come back to the home page <br />
 </p>
 
 7) Admin Login <br />
-To access the Admin login page use /admin.
+To access the Admin login page use /admin. & a valid username, password.
 <p align = "center">
   <img src="Screenshot/AdminLogin.png" alt="Homepage1">
 </p>
 
 8) Admin pannel <br/>
+Only the admin can access this page. <br/> 
 Where the admin can perform CRUD operations.
 <p align = "center">
   <img src="Screenshot/AllPosts.png" alt="Homepage1">
 </p>
 <br/>
+
 A Preview page for the admin.
 <p align = "center">
   <img src="Screenshot/Preview1.png" alt="Homepage1">
 </p>
 <br/>
+
 Where the admin can delete post.
 <p align = "center">
   <img src="Screenshot/Preview2.png" alt="Homepage1">
+</p>
+<br/>
+
+A Edit Post page for the admin.
+<p align = "center">
+  <img src="Screenshot/EditPost.png" alt="Homepage1">
 </p>
 <br/>
 
@@ -85,7 +94,21 @@ A page where the admin can create a new post.
 </p>
 <br/>
 
-A page where the can can view their added categories.
+Select Category from select button.
+<p align = "center">
+  <img src="Screenshot/AddpostCate.png" alt="Homepage1">
+</p>
+<br/>
+
+A page where the admin can view their added categories & can delete them too.
 <p align = "center">
   <img src="Screenshot/AllCate.png" alt="Homepage1">
 </p>
+<br/>
+
+A page where the admin add new categories.
+<p align = "center">
+  <img src="Screenshot/AddCate.png" alt="Homepage1">
+</p>
+
+And then the Logout button will redirect admin to the home page.

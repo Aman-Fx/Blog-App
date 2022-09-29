@@ -53,11 +53,10 @@
 .blog-input textarea {
     margin: 5px auto;
     flex: 1rem;
-    padding: 6px 0;
+    padding: 6px;
     outline: none;
     border: 1px solid gainsboro;
     border-radius: 6px;
-    height: 20px;
     width: 95%;
 }
 
@@ -72,19 +71,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px auto;
+    margin: 10px auto;
     cursor: pointer;
     font-weight: 500;
 }
 
 .custom-select {
-    margin-left: 10px;
-    padding: 5px;
-    border: none;
-    border-radius: 10px;
-    background-color: #171717;
-    color: #f0f0f0;
+    border: 1px solid gainsboro;
+    flex: 1rem;
+    padding: 6px;
+    border-radius: 6px;
+    /* height: 50px; */
+    /* color: #171717; */
     cursor: pointer;
+    width: 95%;
 }
 
 

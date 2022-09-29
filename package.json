@@ -13,11 +13,12 @@
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-select": "^5.4.0",
     "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
-    "json-server": "json-server --watch -p3333 Data/BlogsDb.json",
+    "json-server": "json-server --watch -p4444 Data/BlogsDb.json",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",

@@ -10,11 +10,19 @@ export const Category = () => {
         await axios.get("/Categories").then((response) =>
             setData(response.data)
         )
+            .catch((error) => {
+                console.log(error);
+            })
     };
 
-    const DeleteCate = async (id) => {
-     axios.delete(`/Categories/${id}`);
-     api();
+    const DeleteCate = (id) => {
+        axios.delete(`/Categories/${id}`).then((Response) => (
+            console.log(Response.data)
+        ))
+            .catch((error) => {
+                console.log(error);
+            })
+        api();
     }
 
     useEffect(() => {

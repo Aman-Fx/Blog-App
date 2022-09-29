@@ -214,3 +214,7 @@ export const Login = () => {
     history("/")
   }
   
+
+
+  # Using libray for select tag
+  npm i --save react-select

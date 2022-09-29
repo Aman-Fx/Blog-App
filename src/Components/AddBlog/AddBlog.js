@@ -15,17 +15,6 @@ export const AddBlog = () => {
   const [allCate, setAllCate] = useState([]);
 
 
-  //Calling Api for Blog select tool
-
-  const api = async () => {
-    await axios.get('/Categories').then((Response) => {
-      setAllCate(Response.data)
-    })
-  };
-
-  useEffect(() => {
-    api();
-  }, []);
 
 
   //Hnadling the form submit and posting it to the jason(database)
@@ -38,13 +27,26 @@ export const AddBlog = () => {
 
     axios.post("/BlogDb", addedBlog)
       .then((Response) => {
-        console.log(Response);
+        console.log(Response.data);
       })
       .catch(error => {
         console.log(error);
       })
   }
 
+  //Calling Api for Blog select tool
+  const api = async () => {
+    await axios.get('/Categories').then((Response) => {
+      setAllCate(Response.data)
+    })
+    .catch((error) => {
+      console.log(error);
+  })
+  };
+
+  useEffect(() => {
+    api();
+  }, []);
   return (
     <div>
       <div className="add-blog">
@@ -94,17 +96,12 @@ export const AddBlog = () => {
 
           <div>
             <label htmlFor="Category">Category:</label>
-            {/* <input type="text"
-              placeholder='Blog category'
-              value={category}
-              onChange={(e) => setCategory(e.target.value)}
-              required /> */}
-
-            {/* <select className="custom-select">
-              {allCate.map((item)=>
-                <option value='cate' key ={item.id} onChange={(e) => setCategory(e.target.value)}> {item.category}</option>
+            <select className="custom-select" onChange={(e) => setCategory(e.target.value)} required>
+            <option value="Select category">Select Category</option>
+              {allCate.map((item) =>
+                <option value={item.category} key={item.id} > {item.category}</option>
               )}
-            </select> */}
+            </select>
           </div>
 
           <div>
@@ -114,12 +111,16 @@ export const AddBlog = () => {
               onChange={(e) => setDescription(e.target.value)}
               required />
           </div>
+          <div className="formSubmit" >
+            <button>Submit</button>
+          </div>
         </form>
-        <div className="formSubmit" >
-          <button>Submit</button>
-        </div>
       </div>
 
     </div>
   )
 }
+
+
+
+
